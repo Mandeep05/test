@@ -5,7 +5,7 @@
 	margin:0;
 	padding:0;
 }
-* { font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+* { font-family: "Helvetica","Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 img { 
 	max-width: 100%; 
@@ -30,9 +30,7 @@ a { color: #2BA6CB;}
 .btn {
 	text-decoration:none;
 	color: #FFF;
-	background-color: #407BCF;
-	padding:10px 16px;
-	font-weight:bold;
+	padding:10px 40px;
 	margin-right:10px;
 	text-align:center;
 	cursor:pointer;
@@ -53,24 +51,6 @@ table.social {
 /* 	padding:15px; */
 	background-color: #ebebeb;
 	
-}
-.social .soc-btn {
-	padding: 3px 7px;
-	font-size:12px;
-	margin-bottom:10px;
-	text-decoration:none;
-	color: #FFF;font-weight:bold;
-	display:block;
-	text-align:center;
-}
-a.fb { background-color: #3B5998!important; }
-a.tw { background-color: #1daced!important; }
-a.gp { background-color: #DB4A39!important; }
-a.ms { background-color: #000!important; }
-
-.sidebar .soc-btn { 
-	display:block;
-	width:100%;
 }
 
 /* ------------------------------------- 
@@ -93,19 +73,12 @@ table.body-wrap { width: 100%;}
 ------------------------------------- */
 table.footer-wrap { width: 100%;	clear:both!important;
 }
-.footer-wrap .container td.content  p { border-top: 1px solid rgb(215,215,215); padding-top:15px;}
-.footer-wrap .container td.content p {
-	font-size:10px;
-	font-weight: bold;
-	
-}
-
 
 /* ------------------------------------- 
 		TYPOGRAPHY 
 ------------------------------------- */
 h1,h2,h3,h4,h5,h6 {
-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; line-height: 1.1; margin-bottom:15px; color:#000;
+font-family: "Helvetica","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, "Lucida Grande", sans-serif; line-height: 1.1; margin-bottom:15px; color:#000;
 }
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { font-size: 60%; color: #6f6f6f; line-height: 0; text-transform: none; }
 
@@ -132,33 +105,6 @@ ul li {
 	list-style-position: inside;
 }
 
-/* ------------------------------------- 
-		SIDEBAR 
-------------------------------------- */
-ul.sidebar {
-	background:#ebebeb;
-	display:block;
-	list-style-type: none;
-}
-ul.sidebar li { display: block; margin:0;}
-ul.sidebar li a {
-	text-decoration:none;
-	color: #666;
-	padding:10px 16px;
-/* 	font-weight:bold; */
-	margin-right:10px;
-/* 	text-align:center; */
-	cursor:pointer;
-	border-bottom: 1px solid #777777;
-	border-top: 1px solid #FFFFFF;
-	display:block;
-	margin:0;
-}
-ul.sidebar li a.last { border-bottom-width:0px;}
-ul.sidebar li a h1,ul.sidebar li a h2,ul.sidebar li a h3,ul.sidebar li a h4,ul.sidebar li a h5,ul.sidebar li a h6,ul.sidebar li a p { margin-bottom:0!important;}
-
-
-
 /* --------------------------------------------------- 
 		RESPONSIVENESS
 		Nuke it from orbit. It's the only way to be sure. 
@@ -167,7 +113,7 @@ ul.sidebar li a h1,ul.sidebar li a h2,ul.sidebar li a h3,ul.sidebar li a h4,ul.s
 /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
 .container {
 	display:block!important;
-	max-width:600px!important;
+	max-width:720px!important;
 	margin:0 auto!important; /* makes it centered */
 	clear:both!important;
 }
@@ -175,10 +121,12 @@ ul.sidebar li a h1,ul.sidebar li a h2,ul.sidebar li a h3,ul.sidebar li a h4,ul.s
 /* This should also be a block element, so that it will fill 100% of the .container */
 .content {
 	padding:15px;
-	max-width:600px;
+	max-width:720px;
 	margin:0 auto;
 	display:block; 
 }
+
+
 
 /* Let's make sure tables in the content area are 100% wide */
 .content table { width: 100%; }
@@ -193,7 +141,7 @@ ul.sidebar li a h1,ul.sidebar li a h2,ul.sidebar li a h3,ul.sidebar li a h4,ul.s
 .column-wrap { 
 	padding:0!important; 
 	margin:0 auto; 
-	max-width:600px!important;
+	max-width:720px!important;
 }
 .column table { width:100%;}
 .social .column {
@@ -206,227 +154,156 @@ ul.sidebar li a h1,ul.sidebar li a h2,ul.sidebar li a h3,ul.sidebar li a h4,ul.s
 .clear { display: block; clear: both; }
 
 
-/* ------------------------------------------- 
-		PHONE
-		For clients that support media queries.
-		Nothing fancy. 
--------------------------------------------- */
-@media only screen and (max-width: 600px) {
-	
-	a[class="btn"] { display:block!important; margin-bottom:10px!important; background-image:none!important; margin-right:0!important;}
+/*custum settings */
 
-	div[class="column"] { width: auto!important; float:none!important;}
-	
-	table.social div[class="column"] {
-		width:auto!important;
-	}
-
-}/* ------------------------------------- 
-		GLOBAL 
-------------------------------------- */
-* { 
-	margin:0;
-	padding:0;
-}
-* { font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
-
-img { 
-	max-width: 100%; 
-}
-.collapse {
-	margin:0;
-	padding:0;
-}
-body {
-	-webkit-font-smoothing:antialiased; 
-	-webkit-text-size-adjust:none; 
-	width: 100%!important; 
-	height: 100%;
+#name-cell{
+	vertical-align:bottom;
 }
 
+.class-info-cell{
+	padding-left: 40px;
+}
 
-/* ------------------------------------- 
-		ELEMENTS 
-------------------------------------- */
-a { color: #2BA6CB;}
-
-.btn {
-	text-decoration:none;
-	color: #FFF;
+#blue_btn{
 	background-color: #407BCF;
-	padding:10px 16px;
-	font-weight:bold;
-	margin-right:10px;
-	text-align:center;
-	cursor:pointer;
-	display: inline-block;
+	-webkit-box-shadow: 0 5px 0px 0px #2E5997;
+	-moz-box-shadow: 0 5px 0px 0px #2E5997;
+	box-shadow: 0 5px 0px 0px #2E5997;
 }
 
-p.callout {
-	padding:15px;
-	background-color:#ECF8FF;
-	margin-bottom: 15px;
-}
-.callout a {
-	font-weight:bold;
-	color: #2BA6CB;
+#green_btn{
+	background-color: #60B86A;
+	-webkit-box-shadow: 0 5px 0px 0px #44884D;
+	-moz-box-shadow: 0 5px 0px 0px #44884D;
+	box-shadow: 0 5px 0px 0px #44884D;
 }
 
-table.social {
-/* 	padding:15px; */
-	background-color: #ebebeb;
-	
-}
-.social .soc-btn {
-	padding: 3px 7px;
-	font-size:12px;
-	margin-bottom:10px;
-	text-decoration:none;
-	color: #FFF;font-weight:bold;
-	display:block;
-	text-align:center;
-}
-a.fb { background-color: #3B5998!important; }
-a.tw { background-color: #1daced!important; }
-a.gp { background-color: #DB4A39!important; }
-a.ms { background-color: #000!important; }
-
-.sidebar .soc-btn { 
-	display:block;
-	width:100%;
+#teacher-info-table{
+	padding:20px;
+	border-left: 1px solid #E8E8E8;
+	border-right: 1px solid #E8E8E8;
+	border-bottom: 1px solid #E8E8E8;
+	border-top: 5px solid #4A4A4A;
+	background: #F8F8F8;
 }
 
-/* ------------------------------------- 
-		HEADER 
-------------------------------------- */
-table.head-wrap { width: 100%;}
-
-.header.container table td.logo { padding: 15px; }
-.header.container table td.label { padding: 15px; padding-left:0px;}
-
-
-/* ------------------------------------- 
-		BODY 
-------------------------------------- */
-table.body-wrap { width: 100%;}
-
-
-/* ------------------------------------- 
-		FOOTER 
-------------------------------------- */
-table.footer-wrap { width: 100%;	clear:both!important;
+.teacher-info-cell{
+	vertical-align: top;
 }
-.footer-wrap .container td.content  p { border-top: 1px solid rgb(215,215,215); padding-top:15px;}
-.footer-wrap .container td.content p {
-	font-size:10px;
+
+#teacher-pic{
+	border-radius:50%;
+	overflow:hidden;
+}
+
+#teacher-bio{
+	padding-left: 30px;
+}
+
+.about-table{
+	padding: 20px;
+}
+
+.about-header-cell{
+	vertical-align: bottom;
+	padding-left: 20px;
+}
+
+.unsubscribe-info-table{
+	padding: 20px;
+}
+
+.unsubscribe-info-cell{
+	text-align: center;
+	padding: 0 30px;
+}
+
+.entheos-info-cell{
+	border: 1px solid #E0E0E0;
+	background-color: #F5F5F5;
+	padding:20px;
+	text-align: center;
+}
+
+.arrow{
+	margin-left: 5px;
+  position: relative;
+  top: 4px;
+  width: 12px;
+}
+
+.center-table{
+	padding-left: 25%;
+}
+.center-table-cell{
+	width: 0px;
+}
+
+#forgot-pass-btn-cell{
+	padding-top: 20px;
+	text-align: center;
+}
+
+.center-table-cell p, .about-table-cell p, .teacher-info-cell p, .class-info-cell p, .entheos-info-cell p,
+.unsubscribe-info-cell p{
+	color: #494949;
+}
+
+.center-table-cell h3, .about-header-cell p{
+	color: #4A4A4A;
 	font-weight: bold;
-	
+}
+
+.about-company-table th{
+	text-align: left; 
+}
+
+.footer-logo{
+	width:160px;
+}
+
+.header-logo{
+	width: 100px;
+}
+
+.academy-img{
+	width:140px;
+	height: 100px;
+}
+
+.academy-img-cell{
+	text-align: right;
+}
+
+.about-table-cell{
+	padding-left: 30px;
+	vertical-align: top;
+}
+
+.social-img-holder{
+	text-align: center;
 }
 
 
-/* ------------------------------------- 
-		TYPOGRAPHY 
-------------------------------------- */
-h1,h2,h3,h4,h5,h6 {
-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; line-height: 1.1; margin-bottom:15px; color:#000;
-}
-h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { font-size: 60%; color: #6f6f6f; line-height: 0; text-transform: none; }
-
-h1 { font-weight:200; font-size: 44px;}
-h2 { font-weight:200; font-size: 37px;}
-h3 { font-weight:500; font-size: 27px;}
-h4 { font-weight:500; font-size: 23px;}
-h5 { font-weight:900; font-size: 17px;}
-h6 { font-weight:900; font-size: 14px; text-transform: uppercase; color:#444;}
-
-.collapse { margin:0!important;}
-
-p, ul { 
-	margin-bottom: 10px; 
-	font-weight: normal; 
-	font-size:14px; 
-	line-height:1.6;
-}
-p.lead { font-size:17px; }
-p.last { margin-bottom:0px;}
-
-ul li {
-	margin-left:5px;
-	list-style-position: inside;
+.twitter-img{
+	height:30px;
+	width: 35px;
 }
 
-/* ------------------------------------- 
-		SIDEBAR 
-------------------------------------- */
-ul.sidebar {
-	background:#ebebeb;
-	display:block;
-	list-style-type: none;
-}
-ul.sidebar li { display: block; margin:0;}
-ul.sidebar li a {
-	text-decoration:none;
-	color: #666;
-	padding:10px 16px;
-/* 	font-weight:bold; */
-	margin-right:10px;
-/* 	text-align:center; */
-	cursor:pointer;
-	border-bottom: 1px solid #777777;
-	border-top: 1px solid #FFFFFF;
-	display:block;
-	margin:0;
-}
-ul.sidebar li a.last { border-bottom-width:0px;}
-ul.sidebar li a h1,ul.sidebar li a h2,ul.sidebar li a h3,ul.sidebar li a h4,ul.sidebar li a h5,ul.sidebar li a h6,ul.sidebar li a p { margin-bottom:0!important;}
-
-
-
-/* --------------------------------------------------- 
-		RESPONSIVENESS
-		Nuke it from orbit. It's the only way to be sure. 
------------------------------------------------------- */
-
-/* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
-.container {
-	display:block!important;
-	max-width:600px!important;
-	margin:0 auto!important; /* makes it centered */
-	clear:both!important;
+.fb-img{
+	height: 35px;
+	width: 20px;
 }
 
-/* This should also be a block element, so that it will fill 100% of the .container */
-.content {
-	padding:15px;
-	max-width:600px;
-	margin:0 auto;
-	display:block; 
+.main-container{
+	width:60%;
+	margin: 0 auto;
+	border: 1px solid #E0E0E0;
+	-moz-box-shadow:    0 3px 5px 2px #E0E0E0;
+  -webkit-box-shadow: 0 3px 5px 2px #E0E0E0;
+  box-shadow:         0 3px 5px 2px #E0E0E0;
+  background: #ffffff;
 }
-
-/* Let's make sure tables in the content area are 100% wide */
-.content table { width: 100%; }
-
-
-/* Odds and ends */
-.column {
-	width: 300px;
-	float:left;
-}
-.column tr td { padding: 15px; }
-.column-wrap { 
-	padding:0!important; 
-	margin:0 auto; 
-	max-width:600px!important;
-}
-.column table { width:100%;}
-.social .column {
-	width: 280px;
-	min-width: 279px;
-	float:left;
-}
-
-/* Be sure to place a .clear element after each set of columns, just to be safe */
-.clear { display: block; clear: both; }
 
 
 /* ------------------------------------------- 
@@ -434,7 +311,7 @@ ul.sidebar li a h1,ul.sidebar li a h2,ul.sidebar li a h3,ul.sidebar li a h4,ul.s
 		For clients that support media queries.
 		Nothing fancy. 
 -------------------------------------------- */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 720px) {
 	
 	a[class="btn"] { display:block!important; margin-bottom:10px!important; background-image:none!important; margin-right:0!important;}
 
@@ -443,5 +320,67 @@ ul.sidebar li a h1,ul.sidebar li a h2,ul.sidebar li a h3,ul.sidebar li a h4,ul.s
 	table.social div[class="column"] {
 		width:auto!important;
 	}
+
+}
+
+@media only screen and (max-width: 320px) {
+	.main-container{
+		width: 310px;
+		border: 0;
+	}
+	.academy-img-cell{
+		display: none;
+	}
+
+	.container, .content{
+		max-width: 310px!important;
+	}
+
+	.centered-cell{
+		text-align: center;
+	}
+
+	.calendar-cell{
+		display: none;
+	}
+
+	.class-info-cell{
+		padding: 0;
+	}
+
+	a.btn{
+		display: inline-block!important;
+		padding: 10px 50px;
+	}
+
+	.btn-holder{
+		text-align: center;
+	}
+
+	.teacher-info-cell{
+		display: block;
+    text-align: center;
+  }
+
+  .teacher-info-cell p{
+  	text-align: left;
+  }
+
+  #teacher-pic{
+  	display: inline-block;
+  }
+
+  #teacher-bio{
+  	padding-left: 0;
+  }
+
+  .footer-img-holder, .about-header-cell, .about-table-cell{
+  	display: block;
+  }
+
+  .about-company-table{
+  	display: none;
+  }
+  
 
 }

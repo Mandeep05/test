@@ -6,6 +6,10 @@ Testapp::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'welcome#index'
 
+  get 'reminder' => 'welcome#reminder'
+  get 'forget_pass' => 'welcome#forgot_pass'
+  get 'thank_you' => 'welcome#thank_you'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

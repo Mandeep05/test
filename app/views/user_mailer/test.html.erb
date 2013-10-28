@@ -12,10 +12,9 @@
 		<td class="header container">
 			
 			<div class="content">
-			<table bgcolor="#999999" class="">
+			<table>
 				<tr>
-					<td><img src="http://placehold.it/200x50/" /></td>
-					<td align="right"><h6 class="collapse">Sidebar Hero</h6></td>
+					<td align="left"><img src="/assets/images/logo_header_2x.png" /></td>
 				</tr>
 			</table>
 			</div>
@@ -24,7 +23,6 @@
 		<td></td>
 	</tr>
 </table>
-
 
 <table class="body-wrap">
 	<tr>
@@ -36,101 +34,55 @@
 				<table>
 					<tr>
 						<td>
-							<h1>Welcome, Hari Seldon</h1>
-							<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-							
-							<!-- A Real Hero (and a real human being) -->
-							<p><img src="http://placehold.it/600x300" /></p><!-- /hero -->
-							
-							<!-- Callout Panel -->
-							<p class="callout">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod dolor sit amet, consectetur adipisicing elit. <a href="#">Do it Now! &raquo;</a>
-							</p><!-- /Callout Panel -->
-	
+              <h3>Congratulations!</h3>
+              <p>Hi{Name}</p>
 						</td>
+            <td>
+              <%= image_tag "academy_icon_emailreminder_2x.png" %>
+            </td>
 					</tr>
+          <tr>
+            <td>
+              Thanks for registering!
+            </td>
+          </tr>
 				</table>
 			</div>
 			
-			<!-- COLUMN WRAP -->
-			<div class="column-wrap">
-			
-				<div class="column">
-					<table align="left">
-						<tr>
-							<td>				
-		
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet.</p>
-														
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-								
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet.</p>
-		
-								
-								<a class="btn">Click Here &raquo;</a>
-								
-							</td>
-						</tr>
-					</table>
-				</div>
-			
-				<div class="column">
-					<table align="left">
-						<tr>
-							<td>				
-															
-								<ul class="sidebar">
-									<li>
-										<a>
-											<h5>Header Thing &raquo;</h5>
-											<p>Sub-head or something</p>
-										</a>
-									</li>
-									<li><a class="">Just a Plain Link &raquo;</a></li>
-									<li><a class="">Just a Plain Link &raquo;</a></li>
-									<li><a class="">Just a Plain Link &raquo;</a></li>
-									<li><a class="">Just a Plain Link &raquo;</a></li>
-									<li><a class="">Just a Plain Link &raquo;</a></li>
-									<li><a class="">Just a Plain Link &raquo;</a></li>
-									<li><a class="">Just a Plain Link &raquo;</a></li>
-									<li><a class="">Just a Plain Link &raquo;</a></li>
-									<li><a class="last">Just a Plain Link &raquo;</a></li>
-								</ul>
-								
-								<!-- social & contact -->
-								<table bgcolor="" class="social" width="100%">
-									<tr>
-										<td>
-											
-											<table align="left" width="100%">
-										<tr>
-											<td>				
-												
-												<h6 class="">Connect with Us:</h6>
-												<p class=""><a href="#" class="soc-btn fb">Facebook</a> <a href="#" class="soc-btn tw">Twitter</a> <a href="#" class="soc-btn gp">Google+</a></p>
-												
-												<h6 class="">Contact Info:</h6>												
-												<p>Phone: <strong>408.341.0600</strong><br/>
-                Email: <strong><a href="emailto:hseldon@trantor.com">hseldon@trantor.com</a></strong></p>
-												
-											</td>
-										</tr>
-									</table>
-											
-										</td>
-									</tr>
-								</table><!-- /social & contact -->
-		
-								
-							</td>
-						</tr>
-					</table>					
-				</div>
-				
-				<div class="clear"></div>			
 
-			</div><!-- /COLUMN WRAP -->	
-			
+      <div class="content">
+        <table cellspacing="10">
+          <tr>
+            <td>
+              <img src="http://placehold.it/200x200/" />
+            </td>
+            <td>
+              <p>Class: How To Reach a Tough Goal</p>
+              <p>Time: Tuesday, October 18, 2013 @ 10:00 am</p>
+              <p>Class Overview: The most meaningful goals we pursue are usually also the toughest ones to reach. We'll discuss the *science* of reaching those tough goals.</p>
+              <a class="btn">View Class!</a>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+
+      <div class="content">
+        <table cellspacing="10">
+          <tr>
+            <td>
+              <div style="border-radius:50%;overflow:hidden;">
+                <%= image_tag "heidi_square.png" %>
+              </div>
+            </td>
+            <td>
+              <p><b>Heidi Grant Halvorson, Ph.D.</b></p>
+              <p>Heidi is a social psychologist who researches, writes and speaks about the science of motivation. She is the Associate Director of the Motivation Science Center at the Columbia Business School.</p>
+              <a>View full bio <%= image_tag "gren_arrow_2x.png" %></a>
+            </td>
+          </tr>
+        </table>
+      </div>
 		</td>
 		<td></td>
 	</tr>
@@ -144,17 +96,47 @@
 			
 				<!-- content -->
 				<div class="content">
-					<table>
+					<table cellspacing="10">
+            <tr>
+              <th align ="center"><%= image_tag "logo_footer_2x.png" %></th>
+              <th align = "center"><p>Share the Wisdom <%= image_tag "small_grey_arrow_2x.png" %></p></th>
+              <th align = "center"><p>More Goodness <%= image_tag "small_grey_arrow_2x.png"%></p></th>
+            </tr>
 						<tr>
-							<td align="center">
-								<p>
-									<a href="#">Terms</a> |
-									<a href="#">Privacy</a> |
-									<a href="#"><unsubscribe>Unsubscribe</unsubscribe></a>
-								</p>
+							<td>
+								<p>Our purpose is to help you optimize your life so we can change the world together.</p>
+                <p><b>Company</b><%=image_tag "small_grey_arrow_2x.png" %></p>
+                <p>About</p>
+                <p>Contact Us</p>
+                <p>Support</p>
 							</td>
+
+              <td>
+                <p><%= image_tag "twitter_icon_2x.png" %></p>
+                <p><%= image_tag "facebook_icon_2x.png"%></p>
+              </td>
+
+              <td>
+                <p>The Academy for Optimal Living Virtual Conferences PhilosophersNotes Optimal Living 101 Rock Your Goddess Life Blisstations Quotes Big Ideas</p>
+              </td>
+
 						</tr>
+
+            <tr >
+              <td colspan="3" style="border: 1px solid #E0E0E0; background-color: #F5F5F5;padding:20px;">
+                <p><b>en + theos.</b> Two little Greek words. Put'em together and you've got <i>enthusiasm</i>--or "God within"--the secret sauce to authentic awesomeness.</p>
+              </td>
+            </tr>
 					</table>
+          <table>
+            <tr>
+              <td align="center">
+              <p>You're receiving this email because you signed up for the {insert reason}.</br>
+              If this email looks weird,<a> view it in your browser.</a></br>
+              If you don't want to receive this newsletteranymore,you can <a>unsubscribe</a>(if you like share it with your friend!)
+              </td>
+            </tr>
+          </table>
 				</div><!-- /content -->
 				
 		</td>

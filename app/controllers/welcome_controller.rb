@@ -5,4 +5,16 @@ class WelcomeController < ApplicationController
   	UserMailer.test.deliver
   	redirect_to root_url
   end
+
+  def reminder
+  	
+  end
+
+  def forgot_pass
+  	
+  end
+
+  def thank_you
+  	
+  end
 end
