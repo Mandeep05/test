@@ -63,17 +63,24 @@
     	</tr>
     </table>
 
+    <table class="desk-table">
+      <tr>
+        <td><%= image_tag("desk.png",class: "desk-img") %></td>
+      </tr>
+    </table>
+
     <!-- FOOTER -->
     <table class="footer-wrap">
       <tr>
         <td></td>
+
         <td class="container">
           
             <!-- content -->
             <div class="content">
               <table class="about-table">
                 <tr>
-                  <th><%= image_tag("logo_footer_2x.png", class: "footer-logo") %></th>
+                  <th class="footer-img-holder"><%= image_tag("logo_footer_2x.png", class: "footer-logo") %></th>
                   <th class="about-header-cell"><p>Share the Wisdom <%= image_tag("small_grey_arrow_2x.png",:class=>"arrow") %></p></th>
                   <th class="about-header-cell"><p>More Goodness <%= image_tag("small_grey_arrow_2x.png",:class=>"arrow")%></p></th>
                 </tr>
@@ -141,7 +148,6 @@
             </div><!-- /content -->
             
         </td>
-      
       </tr>
     </table><!-- /FOOTER -->
   </div>
