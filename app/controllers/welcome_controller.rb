@@ -17,4 +17,8 @@ class WelcomeController < ApplicationController
   def thank_you
   	
   end
+
+  def demo
+    
+  end
 end

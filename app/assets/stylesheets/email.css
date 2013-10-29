@@ -192,7 +192,7 @@ ul li {
 	border-right: 1px solid #E8E8E8;
 	border-bottom: 1px solid #E8E8E8;
 	border-top: 5px solid #4A4A4A;
-	background: #F8F8F8;
+	background: #F8F8F8 !important;
 }
 
 .teacher-info-cell{
@@ -200,7 +200,7 @@ ul li {
 }
 
 #teacher-pic{
-	border-radius:50%;
+	border-radius:40%;
 	overflow:hidden;
 }
 
@@ -319,7 +319,7 @@ ul li {
 		For clients that support media queries.
 		Nothing fancy. 
 -------------------------------------------- */
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 820px) {
 	
 	a[class="btn"] { display:block!important; margin-bottom:10px!important; background-image:none!important; margin-right:0!important;}
 
@@ -333,7 +333,7 @@ ul li {
 
 @media only screen and (max-width: 320px) {
 	.main-container{
-		width: 310px;
+		width: 288px;
 		border: 0;
 	}
 	.academy-img-cell{
@@ -341,7 +341,7 @@ ul li {
 	}
 
 	.container, .content{
-		max-width: 310px!important;
+		max-width: 100%!important;
 	}
 
 	.centered-cell{
@@ -389,6 +389,4 @@ ul li {
   .about-company-table{
   	display: none;
   }
-  
-
 }

@@ -9,6 +9,7 @@ Testapp::Application.routes.draw do
   get 'reminder' => 'welcome#reminder'
   get 'forget_pass' => 'welcome#forgot_pass'
   get 'thank_you' => 'welcome#thank_you'
+  get 'demo' => "welcome#demo"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
