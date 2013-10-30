@@ -211,14 +211,21 @@ h6 { font-weight:900; font-size: 14px;}
 
 .unsubscribe-info-cell{
 	text-align: center;
-	padding: 0 30px;
+	padding: 0 50px;
+  font-size: 12px;
+  color: #999;
+  line-height: 22px;
+
 }
 
 .entheos-info-cell{
 	border: 1px solid #E0E0E0;
 	background-color: #F5F5F5;
-	padding:20px;
+	padding: 30px 92px;
 	text-align: center;
+  font-size: 14px;
+  color: #888;
+  line-height: 21px;
 }
 
 .arrow {
@@ -249,12 +256,6 @@ h6 { font-weight:900; font-size: 14px;}
 	text-align: center;
 }
 
-.center-table-cell p, .about-table-cell p, .teacher-info-cell p, .class-info-cell p, .entheos-info-cell p,
-.unsubscribe-info-cell p{
-	color: #494949;
-}
-
-
 .center-table-cell h3, .about-header-cell p{
 	color: #4A4A4A;
 	font-weight: bold;
@@ -281,13 +282,21 @@ h6 { font-weight:900; font-size: 14px;}
 	text-align: right;
 }
 
-.about-table-cell .text {
-	font-size: 12px;
-  padding: 6px 0 10px;
+.about-table-cell {
+  vertical-align: top;
+}
+
+.text {
+	font-size: 13px;
+  padding: 18px 0 20px;
+  color: #888;
+  line-height: 19px;
 }
 
 .social-img-holder{
 	text-align: center;
+  padding-bottom: 18px;
+  padding-top: 18px;
 }
 
 
