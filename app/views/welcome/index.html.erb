@@ -2,7 +2,8 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="/email.css" />
-
+  <link rel="stylesheet" type="text/css" href="/phone.css" data-immutable="true"/>
+  <link rel="stylesheet" type="text/css" href="/desktop.css" data-immutable ="true"/>
 </head>
 <body bgcolor="#F8F8F8" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
 
@@ -176,7 +177,7 @@
                 </tr>
               </table>
     				</div><!-- /content -->
-    				
+    			<tr><%=link_to "send mail", welcome_index_path, method: "post" %></tr>	
     		</td>
     	</tr>
     </table><!-- /FOOTER -->
