@@ -163,19 +163,17 @@ h6 { font-weight:900; font-size: 14px;}
 }
 
 #blue_btn{
-	/*background-color: #407BCF;
-	-webkit-box-shadow: 0 5px 0px 0px #2E5997;
-	-moz-box-shadow: 0 5px 0px 0px #2E5997;
-	box-shadow: 0 5px 0px 0px #2E5997;*/
+	background-color: #407BCF;
+  border-color: -moz-use-text-color -moz-use-text-color #2E5997;
 }
 
-#green_btn{
+/*#green_btn{
 	background-color: #60B86A;
 	-webkit-box-shadow: 0 5px 0px 0px #44884D;
 	-moz-box-shadow: 0 5px 0px 0px #44884D;
 	box-shadow: 0 5px 0px 0px #44884D;
 }
-
+*/
 .teacher-info-table{
 	padding:20px;
 	border-left: 1px solid #E8E8E8;
@@ -204,7 +202,6 @@ h6 { font-weight:900; font-size: 14px;}
 
 .about-header-cell{
 	vertical-align: bottom;
-	padding-left: 20px;
   text-align: left;
 }
 
@@ -224,8 +221,20 @@ h6 { font-weight:900; font-size: 14px;}
 	text-align: center;
 }
 
-.arrow{
+.arrow {
 	width: 12px;
+  vertical-align: -3px;
+}
+
+.lnks {
+  font-size: 13px;
+  color: #888;
+  padding-bottom: 5px; 
+  line-height: 18px;
+}
+
+.sub-header {
+  margin-bottom: 10px;
 }
 
 .center-table{
@@ -272,9 +281,9 @@ h6 { font-weight:900; font-size: 14px;}
 	text-align: right;
 }
 
-.about-table-cell{
-	padding-left: 20px;
-	vertical-align: top;
+.about-table-cell .text {
+	font-size: 12px;
+  padding: 6px 0 10px;
 }
 
 .social-img-holder{
@@ -317,6 +326,7 @@ h6 { font-weight:900; font-size: 14px;}
 .schedule .heading {
 	padding-bottom: 18px;
 }
+
 
 
 /* ------------------------------------------- 
