@@ -1,0 +1,14 @@
+@media only screen and (max-width: 822px) {
+	.main-container { 
+		width: 90%;
+	}
+	.teacher-info-cell, .about-header-cell,.footer-img-holder,.about-table-cell {
+		display: table-cell;
+	}
+	.centered-cell, .btn-holder, .teacher-info-cell {
+		text-align: left;
+	}
+	.class-info-cell, .teacher-bio{
+		padding-left: 40px;
+	}
+}
