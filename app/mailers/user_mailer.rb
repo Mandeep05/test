@@ -3,4 +3,16 @@ class UserMailer < ActionMailer::Base
   def test()
   	mail to: "bhaveshdhupar@gmail.com, mandeep052@gmail.com", subject: "test", css: "email"
   end
+
+  def test1()
+  	mail to: "bhaveshdhupar@gmail.com, mandeep052@gmail.com", subject: "test", css: "email"
+  end
+
+  def test2()
+  	mail to: "bhaveshdhupar@gmail.com, mandeep052@gmail.com", subject: "test", css: "email"
+  end
+
+  def test3()
+  	mail to: "bhaveshdhupar@gmail.com, mandeep052@gmail.com", subject: "test", css: "email"
+  end
 end

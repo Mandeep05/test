@@ -4,6 +4,9 @@ class WelcomeController < ApplicationController
   
   def create
   	UserMailer.test.deliver
+    UserMailer.test1.deliver
+    UserMailer.test2.deliver
+    UserMailer.test3.deliver
   	redirect_to root_url
   end
 

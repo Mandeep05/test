@@ -336,6 +336,26 @@ h6 { font-weight:900; font-size: 14px;}
 	padding-bottom: 18px;
 }
 
+.forgot-pass-table{
+	padding: 0 215px!important;
+}
+
+.forgot-pass-table-row div, .thank-you-table-row div {
+	margin-bottom: 20px;
+}
+
+.forgot-pass-table-row .btn-holder {
+	text-align: center;
+}
+
+.thank-you-table{
+	padding: 0 170px!important;
+}
+
+.thank-you-table-row h3{
+	text-align: center;
+}
+
 
 
 /* ------------------------------------------- 
