@@ -12,15 +12,14 @@
 	margin:0;
 	padding:0;
 }
+
 body {
 	-webkit-font-smoothing:antialiased; 
 	-webkit-text-size-adjust:none; 
 	width: 100%!important; 
 	height: 100%;
+	color: #4A4A4A;
 }
-
-
-
 
 /* ------------------------------------- 
 		ELEMENTS 
@@ -28,13 +27,27 @@ body {
 a { color: #2BA6CB;}
 
 .btn {
-	text-decoration:none;
+	/*text-decoration:none;
 	color: #FFF;
 	padding:10px 40px;
 	margin-right:10px;
 	text-align:center;
 	cursor:pointer;
-	display: inline-block;
+	display: inline-block;*/
+  background: none repeat scroll 0 0 #60B86B;
+  border-color: -moz-use-text-color -moz-use-text-color #4D9356;
+  border-image: none;
+  border-radius: 2px 2px 2px 2px;
+  border-style: none none solid;
+  border-width: medium medium 4px;
+  color: #FFFFFF;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: normal;
+  margin-bottom: 10px;
+  padding: 12px 35px 10px;
+  text-decoration: none;  
 }
 
 p.callout {
@@ -78,32 +91,17 @@ table.footer-wrap { width: 100%;	clear:both!important;
 		TYPOGRAPHY 
 ------------------------------------- */
 h1,h2,h3,h4,h5,h6 {
-font-family: "Helvetica","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, "Lucida Grande", sans-serif; line-height: 1.1; margin-bottom:15px; color:#000;
+font-family: "Helvetica", Arial, sans-serif; line-height: 1.1; margin-bottom:15px;
 }
-h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { font-size: 60%; color: #6f6f6f; line-height: 0; text-transform: none; }
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { font-size: 60%; line-height: 0; text-transform: none; }
 
 h1 { font-weight:200; font-size: 44px;}
 h2 { font-weight:200; font-size: 37px;}
 h3 { font-weight:500; font-size: 27px;}
 h4 { font-weight:500; font-size: 23px;}
 h5 { font-weight:900; font-size: 17px;}
-h6 { font-weight:900; font-size: 14px; text-transform: uppercase; color:#444;}
+h6 { font-weight:900; font-size: 14px;}
 
-.collapse { margin:0!important;}
-
-p, ul { 
-	margin-bottom: 10px; 
-	font-weight: normal; 
-	font-size:14px; 
-	line-height:1.6;
-}
-p.lead { font-size:17px; }
-p.last { margin-bottom:0px;}
-
-ul li {
-	margin-left:5px;
-	list-style-position: inside;
-}
 
 /* --------------------------------------------------- 
 		RESPONSIVENESS
@@ -112,18 +110,14 @@ ul li {
 
 /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
 .container {
-	display:block!important;
-	max-width:720px!important;
-	margin:0 auto!important; /* makes it centered */
-	clear:both!important;
+	display:block;
+	margin:0 auto; /* makes it centered */
+	clear:both;
 }
 
 /* This should also be a block element, so that it will fill 100% of the .container */
 .content {
-	padding:15px;
-	max-width:720px;
-	margin:0 auto;
-	display:block; 
+	padding: 15px 0;
 }
 
 
@@ -157,18 +151,22 @@ ul li {
 /*custum settings */
 
 #name-cell{
-	vertical-align:bottom;
+	padding: 20px 0 0;
 }
 
 .class-info-cell{
 	padding-left: 40px;
 }
 
+.blk {
+	padding-bottom: 24px;
+}
+
 #blue_btn{
-	background-color: #407BCF;
+	/*background-color: #407BCF;
 	-webkit-box-shadow: 0 5px 0px 0px #2E5997;
 	-moz-box-shadow: 0 5px 0px 0px #2E5997;
-	box-shadow: 0 5px 0px 0px #2E5997;
+	box-shadow: 0 5px 0px 0px #2E5997;*/
 }
 
 #green_btn{
@@ -178,7 +176,7 @@ ul li {
 	box-shadow: 0 5px 0px 0px #44884D;
 }
 
-#teacher-info-table{
+.teacher-info-table{
 	padding:20px;
 	border-left: 1px solid #E8E8E8;
 	border-right: 1px solid #E8E8E8;
@@ -247,6 +245,7 @@ ul li {
 	color: #494949;
 }
 
+
 .center-table-cell h3, .about-header-cell p{
 	color: #4A4A4A;
 	font-weight: bold;
@@ -308,11 +307,15 @@ ul li {
 }
 
 .desk-img{
-	width: 100%;
+	/*width: 100%;*/
 }
 
 .social-block{
   width: 144px;
+}
+
+.schedule .heading {
+	padding-bottom: 18px;
 }
 
 
