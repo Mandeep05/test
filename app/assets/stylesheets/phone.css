@@ -38,7 +38,7 @@
 	}
 
 	.teacher-info-cell{
-		display: block;
+		display: block!important;
     text-align: center;
   	}
 
