@@ -1,14 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Testapp</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html style="margin: 0;padding: 0;">
+  <head style="margin: 0;padding: 0;">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Testapp</title>
+    <%= stylesheet_link_tag  "email" %>
+    <%= stylesheet_link_tag  "phone" %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <!-- <link rel="stylesheet" type="text/css" href="phone.css" data-immutable="true"> -->
+    <%= csrf_meta_tags %>
+  </head>
+  <body bgcolor="#F8F8F8" leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+    <center>
+      <%= yield %>
+    </center>
+  </body>
 </html>
