@@ -318,6 +318,17 @@ box-shadow: 0 5px 0px 0px #2E5997;*/
 	padding-bottom: 18px;
 }
 
+.mobile-footer {
+	display: none !important;
+}
+
+.footer {
+  display: block;
+}
+
+.moible {
+	display: none;
+}
 
 /* ------------------------------------------- 
 PHONE
