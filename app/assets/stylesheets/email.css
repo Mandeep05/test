@@ -357,6 +357,18 @@ h6 { font-weight:900; font-size: 14px;}
 }
 
 
+.mobile-footer {
+	display: none !important;
+}
+
+.footer {
+  display: block;
+}
+
+.moible {
+	display: none;
+}
+
 
 /* ------------------------------------------- 
                 PHONE
