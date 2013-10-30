@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="/email.css" />
+  <link rel="stylesheet" type="text/css" href="/phone.css" data-immutable="true"/>
+  <link rel="stylesheet" type="text/css" href="/desktop.css" data-immutable ="true"/>
+</head>
+<body bgcolor="#F8F8F8" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
+
+  <div class="main-container">
+    <table class="head-wrap" bgcolor="#F5F5F5">
+      <tr>
+        <td></td>
+        <td class="header container">
+          
+          <div class="content">
+          <table>
+            <tr>
+              <td><%= image_tag("logo_header_2x.png", class: "header-logo") %></td>
+            </tr>
+          </table>
+          </div>
+          
+        </td>
+        <td></td>
+      </tr>
+    </table>
+
+    <table class="body-wrap">
+      <tr>
+        <td></td>
+        <td class="container" bgcolor="#FFFFFF">
+          
+          <!-- content -->
+          <div class="content">
+            <table>
+              <tr>
+                <td class="centered-cell">
+                  <h3>Congratulations!</h3>
+                </td>
+                <td class="academy-img-cell" rowspan="2">
+                  <%= image_tag("academy_icon_emailreminder_2x.png",class: "academy-img", :width => "140px", :height=> "100px") %>
+                </td>
+              </tr>
+              <tr>
+                <td id="name-cell">
+                  <p>Hi{Name}</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Thanks for registering!
+                </td>
+              </tr>
+            </table>
+          </div>
+          
+
+          <div class="content">
+            <table id="class-info-table">
+              <tr>
+                <td class="calendar-cell">
+                  <img src="http://placehold.it/200x200/" />
+                </td>
+                <td class="class-info-cell">
+                  <p>Class: <b>How To Reach a Tough Goal</b></p>
+                  <p>Time: <b>Tuesday, October 18, 2013 @ 10:00 am</b></p>
+                  <p>Class Overview: The most meaningful goals we pursue are usually also the toughest ones to reach. We'll discuss the *science* of reaching those tough goals.</p>
+                  <p class="btn-holder"><a class="btn" id="blue_btn">View Class!</a></p>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+
+          <div class="content">
+            <table id="teacher-info-table">
+              <tr>
+                <td class="teacher-info-cell">
+                  <div id="teacher-pic">
+                    <%= image_tag "heidi_square.png" %>
+                  </div>
+                </td>
+                <td class="teacher-info-cell" id="teacher-bio">
+                  <p><b>Heidi Grant Halvorson, Ph.D.</b><br/>
+                    Heidi is a social psychologist who researches, writes and speaks about the science of motivation. She is the Associate Director of the Motivation Science Center at the Columbia Business School.</p>
+                  <a>View full bio <%= image_tag("gren_arrow_2x.png",:class=>"arrow") %></a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </td>
+        <td></td>
+      </tr>
+    </table>
+
+    <table class="desk-table">
+      <tr>
+        <td><%= image_tag("desk.png",class: "desk-img") %></td>
+      </tr>
+    </table>
+
+    <!-- FOOTER -->
+    <table class="footer-wrap">
+      <tr>
+        <td></td>
+
+        <td class="container">
+          
+            <!-- content -->
+            <div class="content">
+              <table class="about-table">
+                <tr>
+                  <th class="footer-img-holder"><%= image_tag("logo_footer_2x.png", class: "footer-logo") %></th>
+                  <th class="about-header-cell"><p>Share the Wisdom <%= image_tag("small_grey_arrow_2x.png",:class=>"arrow") %></p></th>
+                  <th class="about-header-cell"><p>More Goodness <%= image_tag("small_grey_arrow_2x.png",:class=>"arrow")%></p></th>
+                </tr>
+                <tr class="about-table-row">
+                  <td class="about-table-cell">
+                    <p>Our purpose is to help you</br>
+                      optimize your life so we can</br>
+                      change the world together.</p>
+                    <table class="about-company-table">
+                      <thead>
+                        <tr>
+                          <th><p><b>Company</b><%=image_tag("small_grey_arrow_2x.png",:class=>"arrow") %></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><p>About</p></td>
+                          <td><p>Affiliate Program</p></td>
+                        </tr>
+                        <tr>
+                          <td><p>Contact Us</p></td>
+                          <td><p>Privacy Policy</p></td>
+                        </tr>
+                        <tr>
+                          <td><p>Support</p></td>
+                          <td><p>Terms and Conditions</p></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+
+                  <td class="about-table-cell">
+                    <p class="social-img-holder"><%= image_tag("twitter_icon_2x.png", class: "twitter-img") %></p>
+                    <p class="social-img-holder"><%= image_tag("facebook_icon_2x.png", class: "fb-img")%></p>
+                  </td>
+
+                  <td class="about-table-cell">
+                    <p>The Academy for Optimal Living</br>
+                      Virtual Conferences</br>
+                      PhilosophersNotes</br>
+                      Optimal Living 101</br>
+                      Rock Your Goddess Life</br>
+                      Blisstations</br>
+                      Quotes</br>
+                      Big Ideas</p>
+                  </td>
+
+                </tr>
+
+                <tr >
+                  <td colspan="3" class="entheos-info-cell">
+                    <p><b>en + theos.</b> Two little Greek words. Put'em together and you've got <i>enthusiasm</i>--or "God within"--the secret sauce to authentic awesomeness.</p>
+                  </td>
+                </tr>
+              </table>
+              <table class="unsubscribe-info-table">
+                <tr>
+                  <td class="unsubscribe-info-cell">
+                  <p>You're receiving this email because you signed up for the {insert reason}.</br>
+                  If this email looks weird,<a> view it in your browser.</a></br>
+                  If you don't want to receive this newsletteranymore,you can <a>unsubscribe</a>(if you like share it with your friend!)
+                  </td>
+                </tr>
+              </table>
+            </div><!-- /content -->
+          <tr><%=link_to "send mail", welcome_index_path, method: "post" %></tr>  
+        </td>
+      </tr>
+    </table><!-- /FOOTER -->
+  </div>
+</body>
+</html>
