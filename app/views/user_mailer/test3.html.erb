@@ -2,6 +2,112 @@
    #bodyTable {height:100% !important; margin:0; padding:0; width:100% !important;}
    #templateContainer { max-width: 700px; width: 100%; }
    #templatePreheader{ padding: 0 30px; }
+   .mobile-footer {
+      display: none !important;
+    }
+
+  @media only screen and (max-width: 480px) {
+
+    #templateContainer { max-width: 600px !important; width: 100% !important; }
+    #templatePreheader{ padding: 0px 30px; }
+
+    .main-container{
+      width: 100%;
+      border: 0;
+    }
+
+    .desk-img{
+      width: 100%;
+    }
+
+    .academy-img-cell{
+      display: none;
+    }
+
+    .container, .content{
+      max-width: 100%;
+    }
+
+    .centered-cell{
+      text-align: center;
+    }
+
+    .calendar-cell{
+      display: none;
+    }
+
+    .class-info-cell{
+      padding: 0;
+    }
+
+    a.btn{
+      display: inline-block;
+      padding: 10px 50px;
+    }
+
+    .btn-holder{
+      text-align: center;
+    }
+
+    .teacher-info-table{
+      padding: 15px 18px!important; 
+    }
+
+    .teacher-info-cell{
+      display: block!important;
+      text-align: center;
+      }
+
+    .teacher-info-cell p, #name-cell{
+      text-align: left;
+    }
+
+    .teacher-info-cell h4{
+      font-size: 16px;
+      font-weight: bold;
+      padding-top: 10px;
+    }
+
+    #teacher-pic{
+      display: inline-block;
+    }
+
+    #teacher-bio {
+      padding-left: 0;
+    }
+
+    .footer-img-holder, .about-header-cell, .about-table-cell{
+      display: block;
+      text-align: center;
+    }
+
+    .about-company-table{
+      display: none;
+    }
+    .mobile-footer {
+      display: block !important;
+    }
+    .footer {
+      display: none;
+    }
+
+    td[class=headercell] img {
+      height:auto !important;
+      width:100% !important;
+    }
+
+    .none {
+      display: none;
+    }
+
+    .unsubscribe-info{
+      padding:0 5px!important;
+    }
+
+    .mobile {
+      display: block !important;
+    }
+  }
 </style>
 <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
   <tr>
@@ -113,10 +219,7 @@
             </table>
           </td>
         </tr>
-        <tr>
-          <td height="25"></td>
-        </tr>
-        <tr>
+        <tr class="footer">
           <td align="center">
             <table cellspacing="0" cellpadding="0" border="0" width="95%" align="center" id="templateContainer">
               <tr>
@@ -216,6 +319,137 @@
             </table>  
           </td>
         </tr>
+        <tr class="mobile-footer">
+          <td align="center">
+            <table cellspacing="0" cellpadding="0" border="0" width="95%" align="center" id="templateContainer">
+              <tr>
+                <td>
+                  <table cellspacing="0" cellpadding="0" border="0" width="100%" style="color:#8c8c8c;font-size:13px;line-height:normal; padding-top:20px;" id="templatePreheader">
+                    <tr align="center">
+                      <td width="33%" valign="top">
+                        <a href="#" class="footer-img-holder"><%= image_tag("logo_footer_2x.png", class: "footer-logo") %></a>
+                        <p style="margin:15px 0;padding:0px;">
+                          Our purpose is to help you optimize your life so we can change the world together.
+                        </p>
+                        <h5 class="none" style="margin:0 0 10px 0;padding:0px;font-size:16px;font-weight:normal;color:#4a4949;">
+                            Company <%=image_tag("small_grey_arrow_2x.png",:class=>"arrow") %>
+                        </h5>
+                        <table class="none">
+                          <tr>
+                            <td width="90"><a href="#" style="color:#8c8c8c;text-decoration:none;">About</a></td>
+                            <td><a href="#" style="color:#8c8c8c;text-decoration:none;">Affiliate Program</a></td>
+                          </tr>
+                          <tr>
+                            <td><a href="#" style="color:#8c8c8c;text-decoration:none;">Contact Us</a></td>
+                            <td><a href="#" style="color:#8c8c8c;text-decoration:none;">Privacy Policy</a></td>
+                          </tr>
+                          <tr>
+                            <td><a href="#" style="color:#8c8c8c;text-decoration:none;">Support</a></td>
+                            <td><a href="#" style="color:#8c8c8c;text-decoration:none;">Terms & Conditions</a></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <table cellspacing="0" cellpadding="0" border="0" width="100%" style="color:#8c8c8c;font-size:13px;line-height:normal;" id="templatePreheader">
+                    <tr  class="none">
+                      <td width="33%" align="center" style="text-align:center;" valign="top">
+                        <h5 style="margin:15px 0 10px 0;padding:0px;font-size:16px;font-weight:normal;color:#4a4949;">
+                          Share the Wisdom <%=image_tag("small_grey_arrow_2x.png",:class=>"arrow") %>
+                        </h5>
+                        <p style="margin:5px 0 20px 0;padding:0px;">
+                          <a href="#"><%= image_tag("twitter_icon_2x.png", class: "twitter-img") %></a>
+                        </p> 
+                         <p style="margin:0px 0 20px 0;padding:0px;">
+                          <a href="#"><%= image_tag("facebook_icon_2x.png", class: "fb-img")%></a>
+                        </p>    
+                      </td>
+                    </tr>
+                    <tr align="center" class="mobile">
+                      <td width="100%" colspan="3" align="center">
+                        <table width="100%">
+                          <h5 style="margin:15px 0 10px 0;padding:0px;font-size:16px;font-weight:normal;color:#4a4949; width: 100%; text-align: center;">
+                            Share the Wisdom <%=image_tag("small_grey_arrow_2x.png",:class=>"arrow") %>
+                          </h5>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr class="mobile" align="center">
+                      <td>
+                        <table width="100%">
+                          <tr>
+                            <td>
+                              <a href="#"><%= image_tag("twitter_icon_2x.png", class: "twitter-img") %></a> 
+                            </td>
+                            <td>
+                              <a href="#"><%= image_tag("facebook_icon_2x.png", class: "fb-img")%></a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <table cellspacing="0" cellpadding="0" border="0" width="100%" style="color:#8c8c8c;font-size:13px;line-height:normal;" id="templatePreheader">
+                    <tr align="center">
+                      <td width="33%" valign="top">
+                        <h5 style="margin:15px 0 10px 0;padding:0px;font-size:16px;font-weight:normal;color:#4a4949;">
+                            More Goodness <%=image_tag("small_grey_arrow_2x.png",:class=>"arrow") %>
+                        </h5> 
+                        <table border="0" width="100%">
+                          <tr align="center">
+                            <td>
+                              <a href="#" style="color:#8c8c8c;text-decoration:none;">The Academy for Optimal Living</a>
+                            </td>
+                          </tr>
+                          <tr align="center">
+                            <td>
+                              <a href="#" style="color:#8c8c8c;text-decoration:none;">Virtual Conferences</a>
+                            </td>
+                          </tr>
+                          <tr align="center">
+                            <td>
+                              <a href="#" style="color:#8c8c8c;text-decoration:none;">PhilosophersNotes</a>
+                            </td>
+                          </tr>
+                          <tr align="center">
+                            <td>
+                              <a href="#" style="color:#8c8c8c;text-decoration:none;">Optimal Living 101</a>
+                            </td>
+                          </tr>
+                          <tr align="center">
+                            <td>
+                              <a href="#" style="color:#8c8c8c;text-decoration:none;">The Academy for Optimal Living</a>
+                            </td>
+                          </tr>
+                          <tr align="center">
+                            <td>
+                              <a href="#" style="color:#8c8c8c;text-decoration:none;">Rock Your Goddess Life</a>
+                            </td>
+                          </tr>
+                          <tr align="center">
+                            <td>
+                              <a href="#" style="color:#8c8c8c;text-decoration:none;">Blissitations</a>
+                            </td>
+                          </tr>
+                          <tr align="center">
+                            <td>
+                              <a href="#" style="color:#8c8c8c;text-decoration:none;">Quotes</a>
+                            </td>
+                          </tr>
+                          <tr align="center">
+                            <td>
+                              <a href="#" style="color:#8c8c8c;text-decoration:none;">Big Ideas</a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>  
+          </td>
+        </tr>
         <tr>
           <td height="45"></td>
         </tr>
@@ -238,11 +472,11 @@
             <table cellspacing="0" cellpadding="0" border="0" width="95%" align="center" id="templatePreheader">
               <tr>
                 <td style="font-size:12px; text-align:center;">
-                  <p style="margin:0px 0 20px 0;padding:0px 50px; line-height: 20px;">
+                  <p class="unsubscribe-info" style="margin:0px 0 20px 0;padding:0px 50px; line-height: 20px;">
                     You’re receiving this email because you signed up for the {<a href="#" style="color:#407bcf;text-decoration;">insert reason</a>}.If this email looks weird, <a href="#" style="color:#407bcf;text-decoration;">view it in your browser</a>. If you don’t want to receive this newsletter anymore,you can <a href="#" style="color:#407bcf;text-decoration;">unsubscribe</a>. (If you like it, share with a friend! :)
                   </p>
                   <p style="margin:0;padding:36px 0px;">
-                    @copy; 2009-2013 en*theos Enterprises, LLC | P.O. Box 33582 San Diego, CA 92163 
+                    &copy; 2009-2013 en*theos Enterprises, LLC | P.O. Box 33582 San Diego, CA 92163 
                   </p> 
                 </td>
               </tr>
