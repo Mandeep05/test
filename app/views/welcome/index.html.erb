@@ -9,39 +9,39 @@
 
   <div class="main-container">
     <table class="head-wrap" bgcolor="#F5F5F5">
-    	<tr>
-    		<td></td>
-    		<td class="header container">
-    			
-    			<div class="content">
-    			<table>
-    				<tr>
-    					<td><%= image_tag("logo_header_2x.png", class: "header-logo") %></td>
-    				</tr>
-    			</table>
-    			</div>
-    			
-    		</td>
-    		<td></td>
-    	</tr>
+      <tr>
+        <td></td>
+        <td class="header container">
+          
+          <div class="content">
+          <table>
+            <tr>
+              <td><%= image_tag("logo_header_2x.png", class: "header-logo") %></td>
+            </tr>
+          </table>
+          </div>
+          
+        </td>
+        <td></td>
+      </tr>
     </table>
 
     <table class="body-wrap">
-    	<tr>
-    		<td></td>
-    		<td class="container" bgcolor="#FFFFFF">
-    			
-    			<!-- content -->
-    			<div class="content">
-    				<table>
-    					<tr>
-    						<td class="centered-cell">
+      <tr>
+        <td></td>
+        <td class="container" bgcolor="#FFFFFF">
+          
+          <!-- content -->
+          <div class="content">
+            <table>
+              <tr>
+                <td class="centered-cell">
                   <h3>Congratulations!</h3>
                 </td>
                 <td class="academy-img-cell" rowspan="2">
                   <%= image_tag("academy_icon_emailreminder_2x.png",class: "academy-img", :width => "140px", :height=> "100px") %>
                 </td>
-    					</tr>
+              </tr>
               <tr>
                 <td id="name-cell">
                   <p>Hi{Name}</p>
@@ -52,9 +52,9 @@
                   Thanks for registering!
                 </td>
               </tr>
-    				</table>
-    			</div>
-    			
+            </table>
+          </div>
+          
 
           <div class="content">
             <table id="class-info-table">
@@ -98,9 +98,9 @@
               </tr>
             </table>
           </div>
-    		</td>
-    		<td></td>
-    	</tr>
+        </td>
+        <td></td>
+      </tr>
     </table>
 
     <table class="desk-table">
@@ -111,22 +111,22 @@
 
     <!-- FOOTER -->
     <table class="footer-wrap">
-    	<tr>
-    		<td></td>
+      <tr>
+        <td></td>
 
-    		<td class="container">
-    			
-    				<!-- content -->
-    				<div class="content">
-    					<table class="about-table">
+        <td class="container">
+          
+            <!-- content -->
+            <div class="content">
+              <table class="about-table">
                 <tr>
                   <th class="footer-img-holder"><%= image_tag("logo_footer_2x.png", class: "footer-logo") %></th>
                   <th class="about-header-cell"><p>Share the Wisdom <%= image_tag("small_grey_arrow_2x.png",:class=>"arrow") %></p></th>
                   <th class="about-header-cell"><p>More Goodness <%= image_tag("small_grey_arrow_2x.png",:class=>"arrow")%></p></th>
                 </tr>
-    						<tr class="about-table-row">
-    							<td class="about-table-cell">
-    								<p>Our purpose is to help you</br>
+                <tr class="about-table-row">
+                  <td class="about-table-cell">
+                    <p>Our purpose is to help you</br>
                       optimize your life so we can</br>
                       change the world together.</p>
                     <table class="about-company-table">
@@ -168,14 +168,14 @@
                       Big Ideas</p>
                   </td>
 
-    						</tr>
+                </tr>
 
                 <tr >
                   <td colspan="3" class="entheos-info-cell">
                     <p><b>en + theos.</b> Two little Greek words. Put'em together and you've got <i>enthusiasm</i>--or "God within"--the secret sauce to authentic awesomeness.</p>
                   </td>
                 </tr>
-    					</table>
+              </table>
               <table class="unsubscribe-info-table">
                 <tr>
                   <td class="unsubscribe-info-cell">
@@ -185,10 +185,10 @@
                   </td>
                 </tr>
               </table>
-    				</div><!-- /content -->
-    			<tr><%=link_to "send mail", welcome_index_path, method: "post" %></tr>	
-    		</td>
-    	</tr>
+            </div><!-- /content -->
+          <tr><%=link_to "send mail", welcome_index_path, method: "post" %></tr>  
+        </td>
+      </tr>
     </table><!-- /FOOTER -->
   </div>
 </body>

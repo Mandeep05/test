@@ -1,14 +1,23 @@
 /* ------------------------------------- 
+<<<<<<< HEAD
                 GLOBAL 
 ------------------------------------- */
 * { 
         margin:0;
         padding:0;
+=======
+		GLOBAL 
+------------------------------------- */
+* { 
+	margin:0;
+	padding:0;
+>>>>>>> 76cc2cb2aef8fe1b0d3a76a602e8188060cd4d02
 }
 * { font-family: "Helvetica","Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 
 .collapse {
+<<<<<<< HEAD
         margin:0;
         padding:0;
 }
@@ -23,10 +32,27 @@ body {
 
 /* ------------------------------------- 
                 ELEMENTS 
+=======
+	margin:0;
+	padding:0;
+}
+
+body {
+	-webkit-font-smoothing:antialiased; 
+	-webkit-text-size-adjust:none; 
+	width: 100%!important; 
+	height: 100%;
+	color: #4A4A4A;
+}
+
+/* ------------------------------------- 
+		ELEMENTS 
+>>>>>>> 76cc2cb2aef8fe1b0d3a76a602e8188060cd4d02
 ------------------------------------- */
 a { color: #2BA6CB;}
 
 .btn {
+<<<<<<< HEAD
         text-decoration:none;
         color: #FFF;
         padding:10px 40px;
@@ -54,6 +80,35 @@ table.social {
 
 /* ------------------------------------- 
                 HEADER 
+=======
+	text-decoration:none;
+	color: #FFF;
+	padding:10px 40px;
+	margin-right:10px;
+	text-align:center;
+	cursor:pointer;
+	display: inline-block;
+}
+
+p.callout {
+	padding:15px;
+	background-color:#ECF8FF;
+	margin-bottom: 15px;
+}
+.callout a {
+	font-weight:bold;
+	color: #2BA6CB;
+}
+
+table.social {
+/* 	padding:15px; */
+	background-color: #ebebeb;
+	
+}
+
+/* ------------------------------------- 
+		HEADER 
+>>>>>>> 76cc2cb2aef8fe1b0d3a76a602e8188060cd4d02
 ------------------------------------- */
 table.head-wrap { width: 100%;}
 
@@ -62,12 +117,17 @@ table.head-wrap { width: 100%;}
 
 
 /* ------------------------------------- 
+<<<<<<< HEAD
                 BODY 
+=======
+		BODY 
+>>>>>>> 76cc2cb2aef8fe1b0d3a76a602e8188060cd4d02
 ------------------------------------- */
 table.body-wrap { width: 100%;}
 
 
 /* ------------------------------------- 
+<<<<<<< HEAD
                 FOOTER 
 ------------------------------------- */
 table.footer-wrap { width: 100%;        clear:both!important;
@@ -75,6 +135,15 @@ table.footer-wrap { width: 100%;        clear:both!important;
 
 /* ------------------------------------- 
                 TYPOGRAPHY 
+=======
+		FOOTER 
+------------------------------------- */
+table.footer-wrap { width: 100%;	clear:both!important;
+}
+
+/* ------------------------------------- 
+		TYPOGRAPHY 
+>>>>>>> 76cc2cb2aef8fe1b0d3a76a602e8188060cd4d02
 ------------------------------------- */
 h1,h2,h3,h4,h5,h6 {
 font-family: "Helvetica", Arial, sans-serif; line-height: 1.1; margin-bottom:15px;
@@ -90,20 +159,35 @@ h6 { font-weight:900; font-size: 14px;}
 
 
 /* --------------------------------------------------- 
+<<<<<<< HEAD
                 RESPONSIVENESS
                 Nuke it from orbit. It's the only way to be sure. 
+=======
+		RESPONSIVENESS
+		Nuke it from orbit. It's the only way to be sure. 
+>>>>>>> 76cc2cb2aef8fe1b0d3a76a602e8188060cd4d02
 ------------------------------------------------------ */
 
 /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
 .container {
+<<<<<<< HEAD
         display:block;
         margin:0 auto; /* makes it centered */
         clear:both;
+=======
+	display:block;
+	margin:0 auto; /* makes it centered */
+	clear:both;
+>>>>>>> 76cc2cb2aef8fe1b0d3a76a602e8188060cd4d02
 }
 
 /* This should also be a block element, so that it will fill 100% of the .container */
 .content {
+<<<<<<< HEAD
         padding: 15px 0;
+=======
+	padding: 15px 0;
+>>>>>>> 76cc2cb2aef8fe1b0d3a76a602e8188060cd4d02
 }
 
 
@@ -114,6 +198,7 @@ h6 { font-weight:900; font-size: 14px;}
 
 /* Odds and ends */
 .column {
+<<<<<<< HEAD
         width: 300px;
         float:left;
 }
@@ -128,6 +213,22 @@ h6 { font-weight:900; font-size: 14px;}
         width: 280px;
         min-width: 279px;
         float:left;
+=======
+	width: 300px;
+	float:left;
+}
+.column tr td { padding: 15px; }
+.column-wrap { 
+	padding:0!important; 
+	margin:0 auto; 
+	max-width:720px!important;
+}
+.column table { width:100%;}
+.social .column {
+	width: 280px;
+	min-width: 279px;
+	float:left;
+>>>>>>> 76cc2cb2aef8fe1b0d3a76a602e8188060cd4d02
 }
 
 /* Be sure to place a .clear element after each set of columns, just to be safe */
@@ -137,6 +238,7 @@ h6 { font-weight:900; font-size: 14px;}
 /*custum settings */
 
 #name-cell{
+<<<<<<< HEAD
         padding: 20px 0 0;
 }
 
@@ -192,10 +294,68 @@ h6 { font-weight:900; font-size: 14px;}
 .about-header-cell{
         vertical-align: bottom;
         padding-left: 20px;
+=======
+	padding: 20px 0 0;
+}
+
+.class-info-cell{
+	padding-left: 40px;
+}
+
+.blk {
+	padding-bottom: 24px;
+	color: red;
+}
+
+#blue_btn{
+	background-color: #407BCF;
+	-webkit-box-shadow: 0 5px 0px 0px #2E5997;
+	-moz-box-shadow: 0 5px 0px 0px #2E5997;
+	box-shadow: 0 5px 0px 0px #2E5997;
+}
+
+#green_btn{
+	background-color: #60B86A;
+	-webkit-box-shadow: 0 5px 0px 0px #44884D;
+	-moz-box-shadow: 0 5px 0px 0px #44884D;
+	box-shadow: 0 5px 0px 0px #44884D;
+}
+
+.teacher-info-table{
+	padding:20px;
+	border-left: 1px solid #E8E8E8;
+	border-right: 1px solid #E8E8E8;
+	border-bottom: 1px solid #E8E8E8;
+	border-top: 5px solid #4A4A4A;
+	background: #F8F8F8;
+}
+
+.teacher-info-cell{
+	vertical-align: top;
+}
+
+#teacher-pic{
+	border-radius:50%;
+	overflow:hidden;
+}
+
+#teacher-bio{
+	padding-left: 30px;
+}
+
+.about-table{
+	padding: 20px;
+}
+
+.about-header-cell{
+	vertical-align: bottom;
+	padding-left: 20px;
+>>>>>>> 76cc2cb2aef8fe1b0d3a76a602e8188060cd4d02
   text-align: left;
 }
 
 .unsubscribe-info-table{
+<<<<<<< HEAD
         padding: 20px;
 }
 
@@ -225,15 +385,51 @@ h6 { font-weight:900; font-size: 14px;}
 #forgot-pass-btn-cell{
         padding-top: 20px;
         text-align: center;
+=======
+	padding: 20px;
+}
+
+.unsubscribe-info-cell{
+	text-align: center;
+	padding: 0 30px;
+}
+
+.entheos-info-cell{
+	border: 1px solid #E0E0E0;
+	background-color: #F5F5F5;
+	padding:20px;
+	text-align: center;
+}
+
+.arrow{
+	width: 12px;
+}
+
+.center-table{
+	padding-left: 25%;
+}
+.center-table-cell{
+	width: 0px;
+}
+
+#forgot-pass-btn-cell{
+	padding-top: 20px;
+	text-align: center;
+>>>>>>> 76cc2cb2aef8fe1b0d3a76a602e8188060cd4d02
 }
 
 .center-table-cell p, .about-table-cell p, .teacher-info-cell p, .class-info-cell p, .entheos-info-cell p,
 .unsubscribe-info-cell p{
+<<<<<<< HEAD
         color: #494949;
+=======
+	color: #494949;
+>>>>>>> 76cc2cb2aef8fe1b0d3a76a602e8188060cd4d02
 }
 
 
 .center-table-cell h3, .about-header-cell p{
+<<<<<<< HEAD
         color: #4A4A4A;
         font-weight: bold;
 }
@@ -266,10 +462,45 @@ h6 { font-weight:900; font-size: 14px;}
 
 .social-img-holder{
         text-align: center;
+=======
+	color: #4A4A4A;
+	font-weight: bold;
+}
+
+.about-company-table th{
+	text-align: left; 
+}
+
+.footer-logo{
+	width:160px;
+}
+
+.header-logo{
+	width: 100px;
+}
+
+.academy-img{
+	width:140px;
+	height: 100px;
+}
+
+.academy-img-cell{
+	text-align: right;
+}
+
+.about-table-cell{
+	padding-left: 20px;
+	vertical-align: top;
+}
+
+.social-img-holder{
+	text-align: center;
+>>>>>>> 76cc2cb2aef8fe1b0d3a76a602e8188060cd4d02
 }
 
 
 .twitter-img{
+<<<<<<< HEAD
         height:30px;
         width: 35px;
 }
@@ -284,17 +515,41 @@ h6 { font-weight:900; font-size: 14px;}
         margin: 0 auto;
         border: 1px solid #E0E0E0;
         -moz-box-shadow:    0 3px 5px 2px #E0E0E0;
+=======
+	height:30px;
+	width: 35px;
+}
+
+.fb-img{
+	height: 35px;
+	width: 20px;
+}
+
+.main-container{
+	width:60%;
+	margin: 0 auto;
+	border: 1px solid #E0E0E0;
+	-moz-box-shadow:    0 3px 5px 2px #E0E0E0;
+>>>>>>> 76cc2cb2aef8fe1b0d3a76a602e8188060cd4d02
   -webkit-box-shadow: 0 3px 5px 2px #E0E0E0;
   box-shadow:         0 3px 5px 2px #E0E0E0;
   background: #ffffff;
 }
 
 .desk-table{
+<<<<<<< HEAD
         width:100%;
 }
 
 .desk-img{
         /*width: 100%;*/
+=======
+	width:100%;
+}
+
+.desk-img{
+	/*width: 100%;*/
+>>>>>>> 76cc2cb2aef8fe1b0d3a76a602e8188060cd4d02
 }
 
 .social-block{
@@ -302,12 +557,23 @@ h6 { font-weight:900; font-size: 14px;}
 }
 
 .schedule .heading {
+<<<<<<< HEAD
         padding-bottom: 18px;
+=======
+	padding-bottom: 18px;
+>>>>>>> 76cc2cb2aef8fe1b0d3a76a602e8188060cd4d02
 }
 
 
 /* ------------------------------------------- 
+<<<<<<< HEAD
                 PHONE
                 For clients that support media queries.
                 Nothing fancy. 
 -------------------------------------------- */
+=======
+		PHONE
+		For clients that support media queries.
+		Nothing fancy. 
+-------------------------------------------- */
+>>>>>>> 76cc2cb2aef8fe1b0d3a76a602e8188060cd4d02
