@@ -80,7 +80,7 @@
       display: block !important;
     }
     .footer {
-      display: none;
+      display: none !important;
     }
 
     td[class=headercell] img {
@@ -143,27 +143,27 @@
                   </td>
                 </tr>
                 <tr>
-                  <td class="calendar-cell" align="center" valign="top">
+                  <td class="calendar-cell" align="center" valign="top" style="padding: 18px 0;">
                     <div style="width:177px;height:197px;background:#ffffff;border:1px solid #e3e3e3;">
                       <div style="height:41px;background:#60B86A;color:#ffffff;">
-                        <p style="font-size: 18px;line-height: 42px;text-align: center;">November</p>
+                        <p style="font-size: 18px;line-height: 42px;text-align: center; margin: 0;">November</p>
                       </div>
-                      <p style="font-size:65px; text-align:center; color:#4a4a4a; padding: 30px 0;">
+                      <p style="font-size:65px; text-align:center; color:#4a4a4a; padding: 30px 0; margin: 0;">
                         18
                         <span style="display:block; font-size:20px; color:#AFAFAF;">Wednesday</span>
                       </p>
                     </div>
                   </td>
                   <td class="class-info-cell" valign="top">
-                    <div class="blk">
+                    <div class="blk" style="padding-bottom: 24px;">
                       <label>Class:</label>
                       <span>How To Reach a Tough Goal</span>
                     </div>
-                    <div class="blk">
+                    <div class="blk" style="padding-bottom: 24px;">
                       <label>Time:</label>
                       <span>Tuesday, October 18, 2013 @ 10:00 am</span>
                     </div>
-                    <div class="blk">
+                    <div class="blk" style="padding-bottom: 24px;">
                       <label>Class Overview:</label> 
                       <span>
                         The most meaningful goals we pursue are usually also the toughest ones to reach. We'll discuss the *science* of reaching those tough goals.
@@ -188,11 +188,11 @@
                 <td class="teacher-info-cell" id="teacher-bio" valign="top" >
                   <div>
                     <h4>Heidi Grant Halvorson, Ph.D.</h4>
-                    <p style="margin-bottom: 8px;">
+                    <p style="padding-bottom: 8px; margin: 0;">
                       Heidi is a social psychologist who researches, writes and speaks about the science of motivation. She is the Associate Director of the Motivation Science Center at the Columbia Business School.
                     </p>
                   </div>
-                  <a>View full bio <%= image_tag("gren_arrow_2x.png",:class=>"arrow") %></a>
+                  <a href="#" style="text-decoration: none;">View full bio <%= image_tag("gren_arrow_2x.png",:class=>"arrow") %></a>
                 </td>
               </tr>
             </table>
@@ -210,7 +210,7 @@
         <tr>
           <td height="25"></td>
         </tr>
-        <tr class="footer">
+        <tr class="footer" style="display: block;">
           <td align="center">
             <table cellspacing="0" cellpadding="0" border="0" width="95%" align="center" id="templateContainer">
               <tr>
@@ -310,7 +310,7 @@
             </table>  
           </td>
         </tr>
-        <tr class="mobile-footer">
+        <tr class="mobile-footer" style="display: none;">
           <td align="center">
             <table cellspacing="0" cellpadding="0" border="0" width="95%" align="center" id="templateContainer">
               <tr>
