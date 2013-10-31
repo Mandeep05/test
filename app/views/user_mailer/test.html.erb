@@ -39,11 +39,6 @@
       padding: 0 !important;
     }
 
-    a.btn{
-      display: inline-block !important;
-      padding: 10px 50px !important;
-    }
-
     .btn-holder{
       text-align: center !important;
     }
@@ -112,17 +107,19 @@
     .mobile {
       display: block !important;
     }
-    .green-btn {
+    #green-btn {
       background-color: #60B86A;
       -webkit-box-shadow: 0 5px 0px 0px #44884D !important;
       -moz-box-shadow: 0 5px 0px 0px #44884D !important;
       box-shadow: 0 5px 0px 0px #44884D !important;
+      border-width: medium medium 0!important;
     }
-    .blue_btn {
+    #blue_btn {
       background-color: #407BCF !important;
       -webkit-box-shadow: 0 5px 0px 0px #2E5997 !important;
       -moz-box-shadow: 0 5px 0px 0px #2E5997 !important;
       box-shadow: 0 5px 0px 0px #2E5997 !important; 
+      border-width: medium medium 0!important;
     }
   }
 </style>
@@ -138,7 +135,7 @@
                   <div class="content">
                     <table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding: 15px 0;">
                       <tr>
-                        <td><%= image_tag("logo_header_2x.png", class: "header-logo", width:"100px") %></td>
+                        <td><%= image_tag("logo_header_2x.png", class: "header-logo", width:"100px",alt:"header") %></td>
                       </tr>
                     </table>
                   </div>
@@ -159,7 +156,7 @@
                     </div>
                   </td>
                   <td class="academy-img-cell" rowspan="2" style="text-align: right; padding: 18px 0;">
-                    <%= image_tag("academy_icon_emailreminder_2x.png",class: "academy-img", :width => "140px", :height=> "100px") %>
+                    <%= image_tag("academy_icon_emailreminder_2x.png",class: "academy-img", :width => "140px", :height=> "100px" ,alt:"academy") %>
                   </td>
                 </tr>
               </table>
@@ -211,7 +208,7 @@
               <tr>
                 <td class="teacher-info-cell" style="display:block; width: 100%;">
                   <div id="teacher-pic" style="border-radius:50%; overflow:hidden; width: 100%;">
-                    <%= image_tag "heidi_square.png" %>
+                    <%= image_tag("heidi_square.png",alt:"teacher") %>
                   </div>
                 </td>
                 <td class="teacher-info-cell" id="teacher-bio" valign="top" style="padding-left: 30px;" >
@@ -221,7 +218,7 @@
                       Heidi is a social psychologist who researches, writes and speaks about the science of motivation. She is the Associate Director of the Motivation Science Center at the Columbia Business School.
                     </p>
                   </div>
-                  <a href="#" style="font-size: ; font-family: ; color:; text-decoration: none;">View full bio <%= image_tag("gren_arrow_2x.png",:class=>"arrow", width: "12px", :style=>'vertical-align: -3px;') %></a>
+                  <a href="#" style="color:#60B96B;font-size: ; font-family: ; color:; text-decoration: none;">View full bio <%= image_tag("gren_arrow_2x.png",:class=>"arrow", width: "12px",alt:"arrow", :style=>'vertical-align: -3px;') %></a>
                 </td>
               </tr>
             </table>
@@ -230,7 +227,7 @@
                 <tr>
                   <td class="teacher-info-cell" style="display:block; width: 100%;">
                     <div id="teacher-pic" style="border-radius:50%; overflow:hidden;">
-                      <%= image_tag "heidi_square.png" %>
+                      <%= image_tag("heidi_square.png",alt:"teacher") %>
                     </div>
                   </td>
                 </tr>
@@ -242,7 +239,7 @@
                         Heidi is a social psychologist who researches, writes and speaks about the science of motivation. She is the Associate Director of the Motivation Science Center at the Columbia Business School.
                       </p>
                     </div>
-                    <a href="#" style="font-size: ; font-family: ; color:; text-decoration: none;">View full bio <%= image_tag("gren_arrow_2x.png",:class=>"arrow", width: "12px", :style=>'vertical-align: -3px;') %></a>
+                    <a href="#" style="color:#60B96B;font-size: ; font-family: ; color:; text-decoration: none;">View full bio <%= image_tag("gren_arrow_2x.png",:class=>"arrow", width: "12px",alt:"arrow", :style=>'vertical-align: -3px;') %></a>
                   </td>
                 </tr>
               </table>
@@ -269,12 +266,12 @@
                   <table cellspacing="0" cellpadding="0" border="0" width="100%" style="color:#8c8c8c;font-size:13px;line-height:normal;" id="templatePreheader">
                     <tr>
                       <td width="33%" valign="top">
-                        <a href="#" class="footer-img-holder"><%= image_tag("logo_footer_2x.png", class: "footer-logo", width: "160px") %></a>
+                        <a href="#" class="footer-img-holder"><%= image_tag("logo_footer_2x.png", class: "footer-logo", width: "160px",alt:"footer-logo") %></a>
                         <p style="margin:15px 0;padding:0px;">
                           Our purpose is to help you optimize your life so we can change the world together.
                         </p>
                         <h5 style="margin:0 0 10px 0;padding:0px;font-size:16px;font-weight:normal;color:#4a4949;">
-                            Company <%=image_tag("small_grey_arrow_2x.png",:class=>"arrow", width: "12px", :style=>'vertical-align: -3px;') %>
+                            Company <%=image_tag("small_grey_arrow_2x.png",:class=>"arrow", width: "12px",alt:"arrow", :style=>'vertical-align: -3px;') %>
                         </h5>
                         <table>
                           <tr>
@@ -293,18 +290,18 @@
                       </td>
                       <td width="33%" align="center" style="text-align:center;" valign="top">
                         <h5 style="margin:15px 0 10px 0;padding:0px;font-size:16px;font-weight:normal;color:#4a4949;">
-                          Share the Wisdom <%=image_tag("small_grey_arrow_2x.png",:class=>"arrow",:class=>"arrow", width: "12px", :style=>'vertical-align: -3px;') %>
+                          Share the Wisdom <%=image_tag("small_grey_arrow_2x.png",:class=>"arrow",:class=>"arrow", width: "12px",alt:"arrow", :style=>'vertical-align: -3px;') %>
                         </h5>
                         <p style="margin:5px 0 20px 0;padding:0px;">
-                          <a href="#"><%= image_tag("twitter_icon_2x.png", class: "twitter-img" , height:"30px", width:"35px") %></a>
+                          <a href="#"><%= image_tag("twitter_icon_2x.png", class: "twitter-img" , height:"30px", width:"35px",alt:"twitter-logo") %></a>
                         </p> 
                          <p style="margin:0px 0 20px 0;padding:0px;">
-                          <a href="#"><%= image_tag("facebook_icon_2x.png", class: "fb-img", height:"35px", width:"20px")%></a>
+                          <a href="#"><%= image_tag("facebook_icon_2x.png", class: "fb-img", height:"35px", width:"20px",alt:"fb-logo")%></a>
                         </p>    
                       </td>
                       <td width="33%" valign="top">
                         <h5 style="margin:15px 0 10px 0;padding:0px;font-size:16px;font-weight:normal;color:#4a4949;">
-                            More Goodness <%=image_tag("small_grey_arrow_2x.png",:class=>"arrow",:class=>"arrow", width: "12px", :style=>'vertical-align: -3px;') %>
+                            More Goodness <%=image_tag("small_grey_arrow_2x.png",:class=>"arrow",:class=>"arrow", width: "12px",alt:"arrow", :style=>'vertical-align: -3px;') %>
                         </h5> 
                         <table border="0" width="100%">
                           <tr>
@@ -370,12 +367,12 @@
                     <table cellspacing="0" cellpadding="0" border="0" width="100%" style="color:#8c8c8c;font-size:13px;line-height:normal;" id="templatePreheader">
                       <tr align="center">
                         <td width="33%" valign="top">
-                          <a href="#" class="footer-img-holder"><%= image_tag("logo_footer_2x.png", class: "footer-logo" , width: "160px") %></a>
+                          <a href="#" class="footer-img-holder"><%= image_tag("logo_footer_2x.png", class: "footer-logo" , width: "160px",alt:"footer-logo") %></a>
                           <p style="margin:15px 0;padding:0px;">
                             Our purpose is to help you optimize your life so we can change the world together.
                           </p>
                           <h5 class="none" style="margin:0 0 10px 0;padding:0px;font-size:16px;font-weight:normal;color:#4a4949;">
-                              Company <%=image_tag("small_grey_arrow_2x.png",:class=>"arrow" , width: "12px", :style=>'vertical-align: -3px;') %>
+                              Company <%=image_tag("small_grey_arrow_2x.png",:class=>"arrow" , width: "12px",alt:"arrow", :style=>'vertical-align: -3px;') %>
                           </h5>
                           <table class="none">
                             <tr>
@@ -398,13 +395,13 @@
                       <tr class="none" align="center">
                         <td width="33%" align="center" style="text-align:center;" valign="top">
                           <h5 style="margin:15px 0 10px 0;padding:0px;font-size:16px;font-weight:normal;color:#4a4949;">
-                            Share the Wisdom <%=image_tag("small_grey_arrow_2x.png",:class=>"arrow", width: "12px", :style=>'vertical-align: -3px;') %>
+                            Share the Wisdom <%=image_tag("small_grey_arrow_2x.png",:class=>"arrow", width: "12px",alt:"arrow", :style=>'vertical-align: -3px;') %>
                           </h5>
                           <p style="margin:5px 0 20px 0;padding:0px;">
-                            <a href="#"><%= image_tag("twitter_icon_2x.png", class: "twitter-img") %></a>
+                            <a href="#"><%= image_tag("twitter_icon_2x.png", class: "twitter-img",alt:"twitter-logo") %></a>
                           </p> 
                            <p style="margin:0px 0 20px 0;padding:0px;">
-                            <a href="#"><%= image_tag("facebook_icon_2x.png", class: "fb-img")%></a>
+                            <a href="#"><%= image_tag("facebook_icon_2x.png", class: "fb-img",alt:"fb-logo")%></a>
                           </p>    
                         </td>
                       </tr>
@@ -412,7 +409,7 @@
                         <td width="100%" colspan="3" align="center">
                           <table width="100%">
                             <h5 style="margin:15px 0 10px 0;padding:0px;font-size:16px;font-weight:normal;color:#4a4949; width: 100%; text-align: center;">
-                              Share the Wisdom <%=image_tag("small_grey_arrow_2x.png",:class=>"arrow" , width: "12px", :style=>'vertical-align: -3px;') %>
+                              Share the Wisdom <%=image_tag("small_grey_arrow_2x.png",:class=>"arrow" , width: "12px",alt:"arrow", :style=>'vertical-align: -3px;') %>
                             </h5>
                           </table>
                         </td>
@@ -422,10 +419,10 @@
                           <table width="100%">
                             <tr>
                               <td>
-                                <a href="#"><%= image_tag("twitter_icon_2x.png", class: "twitter-img" ,height:"30px", width:"35px")%></a> 
+                                <a href="#"><%= image_tag("twitter_icon_2x.png", class: "twitter-img" ,height:"30px", width:"35px",alt:"twitter-logo")%></a> 
                               </td>
                               <td>
-                                <a href="#"><%= image_tag("facebook_icon_2x.png", class: "fb-img", height:"35px", width:"20px")%></a>
+                                <a href="#"><%= image_tag("facebook_icon_2x.png", class: "fb-img", height:"35px", width:"20px",alt:"fb-logo")%></a>
                               </td>
                             </tr>
                           </table>
@@ -436,7 +433,7 @@
                       <tr align="center">
                         <td width="33%" valign="top">
                           <h5 style="margin:15px 0 10px 0;padding:0px;font-size:16px;font-weight:normal;color:#4a4949;">
-                              More Goodness <%=image_tag("small_grey_arrow_2x.png",:class=>"arrow" , width: "12px", :style=>'vertical-align: -3px;') %>
+                              More Goodness <%=image_tag("small_grey_arrow_2x.png",:class=>"arrow" , width: "12px",alt:"arrow", :style=>'vertical-align: -3px;') %>
                           </h5> 
                           <table border="0" width="100%">
                             <tr align="center">
@@ -526,9 +523,6 @@
               </tr>
             </table>
           </td>
-        </tr>
-        <tr>
-          <%=link_to "send mail", welcome_index_path, method: "post" %>
         </tr>
       </table>
     </td>
