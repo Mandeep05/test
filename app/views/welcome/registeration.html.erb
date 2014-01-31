@@ -7,40 +7,120 @@
 
   @media only screen and (max-width: 480px) {
     #templateContainer { max-width: 600px !important; width: 100% !important; }
-    #templatePreheader{ padding: 0px 30px !important; }
+    #templatePreheader{ padding: 0px 20px !important; }
     .main-container{
       width: 100% !important;
       border: 0 !important;
     }
 
-    .desk-img{
-      width: 100% !important;
+    #header-table{
+      padding: 15px 0px 15px 0px !important;
+    }
+
+    .header-images{
+      display: none !important;
+    }
+
+    .center-align{
+      text-align: center !important;
+    }
+
+    .left-align{
+      text-align: left !important;
+    }
+
+    .header-mobile-text{
+      display: inline-block !important;
+    }
+
+    .normal-text{
+      font-size: 13px !important;
+      line-height: 18px !important;
+    }
+
+    .big-text{
+      font-size: 16px !important;
+    }
+
+    .bigger-text{
+      font-size: 20px !important;
     }
 
     .teacher-img-cell{
       display: none !important;
     }
 
+    .mobile-teacher-img-cell{
+      display: block !important;
+    }
+
     .container, .content{
       max-width: 100% !important;
     }
 
-    .centered-cell{
-      text-align: center !important;
+    .conference-plan-content , .oasis-container{
+      padding: 0 20px !important;
     }
 
-    .calendar-cell{
+    .conference-plan , .oasis-content{
+      padding: 10px !important;
+    }
+
+    .conference-plan-heading {
+      font-size: 18px !important;
+      margin-bottom: 12px !important;
+    }
+
+    .oasis-heading{
+      font-size: 20px !important;
+      margin-bottom: 12px !important;
+    }
+
+    .oasis-small-heading{
+      font-size: 12px !important;
+    }
+    .price{
+      font-size: 33px !important;
+    }
+
+    .price-text{
+      font-size: 13px !important;
+    }
+
+    .btn-container{
+      margin: 0 10px 20px !important;
+    }
+
+    .btn{
+      padding: 15px 70px !important;
+    }
+
+    .oasis-mobile-video{
+      display: block !important;
+    }
+
+    .oasis-video{
       display: none !important;
     }
+
+    .oasis-text{
+      padding: 0;
+    }
+
+    .oasis-btn-container{
+      margin: 20px 0px !important;
+    }
+
+    .oasis-btn{
+      padding: 15px 6px !important;
+    }
+
 
     .class-info-cell{
       padding: 0 !important;
     }
 
-    a.btn{
-      display: inline-block !important;
-      padding: 10px 50px !important;
-    }
+    
 
     .btn-holder {
       text-align: center !important;
@@ -153,7 +233,7 @@
                     <tr>
                       <td class="header container">
                         <div class="content">
-                          <table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding: 15px 10px 15px 40px;">
+                          <table border="0" id="header-table" cellpadding="0" cellspacing="0" width="100%" style="padding: 15px 10px 15px 40px;">
                             <tr>
                               <td><%= image_tag("academy/images/entheos_logo_footer_2x.png", class: "header-logo", width:"100px") %></td>
                               <td align="right" class="header-images" valign="center">
@@ -162,6 +242,9 @@
                                 <%= image_tag("header_twitter.png",class: "header-tw-logo", :style =>"margin-left:5px;") %>
                                 <%= image_tag("header_entheos.png",class: "header-en-logo", :style =>"margin-left:5px;") %>
                                 <%= image_tag("header_mail.png",class: "header-mail-logo", :style =>"margin-left:5px;") %>
+                              </td>
+                              <td align="right" class="header-mobile-text" valign="bottom" style="display:none;margin">
+                                <div style="font-size:13px;margin-left:58px;position:relative;top:5px;">Virtual Conferences</div>
                               </td>
                             </tr>
                           </table>
@@ -176,17 +259,21 @@
                   <div class="content" style="padding: 15px 0;">
                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templatePreheader" style="padding-left: 40px; padding-right: 40px;">
                       <tr>
-                        <td class="centered-cell" style="padding: 25px 0 0;" valign="top">
+                        <td style="padding: 25px 0 0;" valign="top">
                           <div style="font-size:14px;color:#4a4a4a;">
                             Hi Michael!
                           </div>
-                          <div style="font-size:14px;color:#4a4a4a;padding-top:22px;">
-                            Thank you for signing up for the <b>Get Vitalized Naturally</b> conference </br>
-                            width Dr. Sara Gottfried!
+                          <div class="normal-text" style="font-size:14px;color:#4a4a4a;padding-top:22px;">
+                            Thank you for signing up for the <b>Get Vitalized Naturally</b> conference with Dr. Sara Gottfried!
                           </div>
-                          <h3 style="margin:14px 0 0;font-size:22px;">December 9-11,2013</h3>
+                          <h3 class="center-align bigger-text" style="margin:14px 0 0;font-size:22px;">December 9-11,2013</h3>
                         </td>
                         <td class="teacher-img-cell" rowspan="3" style="text-align: right; padding: 25px 0 10px;">
+                          <%= image_tag("teacher.png",class: "teacher-img", :width => "190px", :height=> "107px") %>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="mobile-teacher-img-cell" rowspan="3" style="text-align: center; padding: 25px 0 10px;display:none;">
                           <%= image_tag("teacher.png",class: "teacher-img", :width => "190px", :height=> "107px") %>
                         </td>
                       </tr>
@@ -195,18 +282,18 @@
                   <div class="content" style="padding: 15px 0;">
                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templatePreheader" style="padding-left: 40px; padding-right: 40px;">
                       <tr>
-                        <td colspan="2" style="padding-bottom: 22px; font-size: 14px;color:#4a4a4a;line-height:20px;">
+                        <td colspan="2" class="normal-text" style="padding-bottom: 22px; font-size: 14px;color:#4a4a4a;line-height:20px;">
                           Live longer, love better and laugh louder with Dr. Sara Gottfried and 13 of the world's most disruptive though leaders, doctors, shamanas and entrepreneurs.
                         </td>
                       </tr>
                       <tr>
-                        <td colspan="2" style="padding-bottom: 18px; font-size: 14px;color:#4a4a4a;line-height:20px;">
+                        <td colspan="2" class="normal-text" style="padding-bottom: 18px; font-size: 14px;color:#4a4a4a;line-height:20px;">
                           Please bookmark this link to the Conference Play page where all the sessions will be streamed:
                         </td>
                       </tr>
                       <tr>
                         <td colspan="2" style="font-size: 18px;color:#407BCF;">
-                          <a href="#" style="text-decoration:none;">http://www.entheos.com/Get-Vitalized-Naturally/Play</a>
+                          <a href="#" class="big-text" style="text-decoration:none;">http://www.entheos.com/Get-Vitalized-Naturally/Play</a>
                         </td>
                       </tr>
                     </table>
@@ -219,14 +306,14 @@
                     <table class="conference-plan" style="padding: 38px 44px;border-top: 1px solid #E8E8E8;border-left: 1px solid #E8E8E8;border-right: 1px solid #E8E8E8;background: #F8F8F8;" border="0" cellpadding="0" cellspacing="0" width="100%">
                       <tr class="conference-plan-header">
                         <td colspan="2" align="center">
-                          <h3 style="font-size:22px;margin:0 0 22px">Want to dive in even deeper?</h3>
+                          <h3 class="conference-plan-heading" style="font-size:22px;margin:0 0 22px">Want to dive in even deeper?</h3>
                         </td>
                       </tr>
                       <tr>
-                        <td colspan="2" align="center">
-                          <div style="line-height:22px;">
-                            If you like to own all the interviews from this conference you can purchase all {# of </br>
-                            Experts}+ hours of video, MP3s, and PDF transcripts anytime through Wednesday, </br>
+                        <td colspan="2" class="left-align" align="center">
+                          <div class="normal-text" style="line-height:22px;">
+                            If you like to own all the interviews from this conference you can purchase all {# of 
+                            Experts}+ hours of video, MP3s, and PDF transcripts anytime through Wednesday,
                             December 11 for {Pre-conf Price}. After {Last Day} the price will go to {Post-conf Price}.
                           </div>
                         </td>
@@ -235,22 +322,22 @@
                     <table class="conference-plan" style="padding: 38px 150px;border-bottom: 1px solid #E8E8E8;border-left: 1px solid #E8E8E8;border-right: 1px solid #E8E8E8;background: #FFFFFF;" border="0" cellpadding="0" cellspacing="0" width="100%">
                       <tr align="center">
                         <td>
-                          <div style="font-size:16px; padding-bottom:20px;">
+                          <div class="price-text" style="font-size:16px; padding-bottom:20px;">
                             Price right now
-                            <div style="font-size:38px"><b>&#36;25</b></div>
+                            <div class="price" style="font-size:38px"><b>&#36;25</b></div>
                           </div>
                         </td>
                         <td>
-                          <div style="font-size:16px; padding-bottom:20px;">
+                          <div class="price-text" style="font-size:16px; padding-bottom:20px;">
                             Price after conference
-                            <div style="font-size:38px"><b>&#36;50</b></div>
+                            <div class="price" style="font-size:38px"><b>&#36;50</b></div>
                           </div>
                         </td>
                       </tr>
                       <tr align="center">
                         <td colspan="2">
-                          <div style="background:#407bcf;border-radius:2px;">
-                            <a href="#" style="padding:15px 90px;color:#ffffff;text-decoration:none;display:block;font-size:18px;">
+                          <div class="btn-container" style="background:#407bcf;border-radius:2px;">
+                            <a href="#" class="btn" style="padding:15px 90px;color:#ffffff;text-decoration:none;display:block;font-size:18px;">
                               Buy Now
                             </a>
                           </div>
@@ -262,33 +349,38 @@
               </tr>
               <tr>
                 <td align="center" valign="top" style="padding: 20px 0;">
-                  <div style="padding:0 40px;">
-                    <table style="padding: 38px 36px;border-top: 1px solid #E8E8E8;border-left: 1px solid #E8E8E8;border-right: 1px solid #E8E8E8;background: #F8F8F8;" border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <div class="oasis-container" style="padding:0 40px;">
+                    <table class="oasis-content" style="padding: 38px 36px;border-top: 1px solid #E8E8E8;border-left: 1px solid #E8E8E8;border-right: 1px solid #E8E8E8;background: #F8F8F8;" border="0" cellpadding="0" cellspacing="0" width="100%">
                       <tr>
                         <td colspan="2" align="center">
-                          <h3 style="font-size:14px;margin:0 0 8px">
+                          <h3 class="oasis-small-heading" style="font-size:14px;margin:0 0 8px">
                             Meet other inspired peeps who are also attending the conference!
                           </h3>
                         </td>
                       </tr>
                       <tr>
                         <td colspan="2" align="center">
-                          <h3 style="font-size:22px;margin:0 0 35px">Join the discussion now on the Oasis! :)</h3>
+                          <h3 class="oasis-heading" style="font-size:22px;margin:0 0 35px">Join the discussion now on the Oasis! :)</h3>
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td class="oasis-mobile-video" style="display:none;text-align:center;margin-bottom:12px;">
+                          <%= image_tag("oasis_video.png",:width=>"247",:height=>"147") %> 
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="oasis-video">
                           <%= image_tag("oasis_video.png",:width=>"247",:height=>"147") %>
                         </td>
                         <td valign="top">
-                          <div style="padding-left:25px;line-height:20px;">
-                            Meet everyone else attending the conference!</br>
-                            Create new friends. Share ideas about how to</br>
-                            optimize your life. Get inspired. Support one</br>
+                          <div class="center-align oasis-text" style="padding-left:25px;line-height:20px;">
+                            Meet everyone else attending the conference!
+                            Create new friends. Share ideas about how to
+                            optimize your life. Get inspired. Support one
                             another. Thats what the Oasis is all about.
                           </div>
-                          <div style="background:#3668AF;margin:20px 0 0 25px;border-radius:2px;">
-                            <a href="#" style="color:#ffffff; padding:15px 28px;display:block;text-decoration:none; font-size:16px;">Learn more + join the discussion!</a>
+                          <div class="oasis-btn-container" style="background:#3668AF;margin:20px 0 0 25px;border-radius:2px;">
+                            <a class="oasis-btn" href="#" style="color:#ffffff; padding:15px 28px;display:block;text-decoration:none; font-size:16px;">Learn more + join the discussion!</a>
                           </div>  
                         </td> 
                       </tr>
@@ -298,7 +390,7 @@
               </tr>
               <tr>
                 <td align="center" valign="top" style="padding: 10px 0;">
-                  <table style="padding: 0 40px;" border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <table style="padding: 0 40px;" border="0" cellpadding="0" cellspacing="0" width="100%" id="templatePreheader">
                     <tr>
                       <td colspan="2">
                         <div style="font-size:14px;">Keep an eye on your inbox for important details leading up to the event!</div>
